@@ -1,0 +1,78 @@
+body{
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+}
+.search_part, .search_result{
+    padding: 10px;
+    text-align: center;
+}
+.input_text, .btn_area{
+    padding: 5px 0;
+}
+.btn{
+    font-size: 18px;
+}
+.flex_h{
+    display: box;
+    /* OLD - Android 4.4- */
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    /* 09版 */
+    -webkit-box-orient: horizontal;
+    /* 12版 */
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+.flex_item{
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    width: 20%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+.result_list{
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+}
+.result, .result_comp{
+    word-break: break-all;
+}
+.result_comp{
+    max-width: 30%;
+}
+.result_text{
+    border: none;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+.hide_ele{
+    display: none;
+}
+.result_head, .search_count{
+    padding: 10px 0;
+}
+.delete:hover, .modify:hover{
+    cursor: pointer;
+    color: #0000ff;
+}
